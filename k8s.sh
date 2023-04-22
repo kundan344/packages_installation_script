@@ -70,6 +70,16 @@ kubeadm reset pre-flight checks
 
 kubectl get nodes 
 
+Might be you will get erro : the-connection-to-the-server-x-x-x-6443-was-refused-did-you-specify-the-right 
+please use below command to fix :
+
+sudo mkdir -p /etc/containerd/
+containerd config default | sudo tee /etc/containerd/config.toml
+sudo systemctl restart containerd
+
+Credits: https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/install-containerd-on-ubuntu-22-04.html
+
+
 
 
 
