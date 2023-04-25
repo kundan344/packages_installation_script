@@ -1,12 +1,12 @@
 --------------------------------------on master-node---------------------------------
 apt-get update 
-apt-get install docker-io 
+apt-get install docker.io 
 systemctl start docker
 systemctl enable docker
 
 --------------------------------------on worker-node---------------------------------
 apt-get update 
-apt-get install docker-io 
+apt-get install docker.io 
 systemctl start docker
 systemctl enable docker
 
